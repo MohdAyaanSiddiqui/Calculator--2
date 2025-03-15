@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-color: #C1E8FF;
+    padding-top: 50px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 auto;
+    margin: 0 15px;
+}
+.Calculator-container{
+ max-width: 400px;
+ margin: 0 auto;
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow:0 15px 10px rgba(0,0,0,0.1);
+ padding: 20px;
+}
+.Calculator-display{
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: right;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#display{
+ color: #252929;
+ font-size: 2rem;
+ font-weight: bold; 
+}
+.calculator-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.calculator-buttons .btn{
+    width: calc(25% - 8px);
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: all 0.2s;   
+}
+.number-btn{
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: all 0.4s ease;
+}
+.number-btn:hover{
+    background-color: #e9ecef;
+}
+.operator-btn{
+    background-color: #6c757d;
+    color: white;
+    transition: all 0.4s ease;
+
+}
+.operator-btn:hover{
+    background-color: #5a6268;
+}
+#equals-btn{
+    background-color: #007bff;
+    color: white;
+    transition: all 0.4s ease;
+}
+#equals-btn:hover{
+    background-color: #0069d9;
+}
+#clear-btn{
+    background-color: #dc3545;
+    color: white;
+    transition: all 0.4s ease;
+}
+#clear-btn:hover{
+    background-color: #c82333;
+}
+#delete-btn,
+#percent-btn{
+    background-color: #6c757d;
+    color: white;
+    transition: all 0.4s ease;
+}
+#delete-btn:hover,
+#percent-btn:hover{
+    background-color: #5a6268;
+}
+.decimal-btn{
+    background-color: #f8f9fa;
+    color: white;
+    transition: all 0.4s ease;
+}
+.decimal-btn:hover{
+    background-color: #e9ecef;
+}
+#zero-btn{
+    width: calc(50% - 5px);
+
+}
+.calculator-buttons .btn:active{
+    transform: scale(0.95);
+}
+@media(max-width:480px){
+    .calculator-buttons{
+        width: 100%;
+        padding: 15px;
+    }
+}
+.calculator-buttons .btn{
+    height: 50px;
+    font-size: 1.2rem;
+}
